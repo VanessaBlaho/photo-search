@@ -5,7 +5,7 @@ export default function Homepage() {
   return (
     <>
       <h1 className="homepage_headline">
-        Searchazar: The #1 Image Search Site on the Planet
+        Photo Search
       </h1>
       <SearchParent />
     </>
