@@ -1,13 +1,16 @@
-import "./App.scss";
-import { BrowserRouter } from "react-router-dom";
-import RoutesSwitch from "./RoutesSwitch";
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { SearchProvider } from './contexts/SearchContext';
+import RoutesSwitch from './RoutesSwitch';
 
 function App() {
   return (
     <BrowserRouter>
-      <>
-        <RoutesSwitch />
-      </>
+      <SearchProvider>
+        <>
+          <RoutesSwitch />
+        </>
+      </SearchProvider>
     </BrowserRouter>
   );
 }
